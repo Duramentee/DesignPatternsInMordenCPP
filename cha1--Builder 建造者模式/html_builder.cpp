@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include <memory>
 #include <utility>
 #include <vector>
@@ -31,9 +32,22 @@ protected:
 	HtmlElement(string name, string text) : name{std::move(name)}, text{std::move(text)} {}
 
 public:
+	// 递归生成 HTML 字符串
 	[[nodiscard]] string str(int indent = 0) const {
-		// pretty-print the contents
-		return "something";
+		ostringstream oss;
+		string i(indent_size * indent, ' ');
+		oss << i << "<" << name << ">" << endl;
+
+		if (!text.empty()) {
+			oss << string(indent_size * (indent + 1), ' ') << text << endl;
+		}
+
+		for (const auto& e : elements) {
+			oss << e.str(indent + 1);
+		}
+
+		oss << i << "</" << name << ">" << endl;
+		return oss.str();
 	}
 };
 
@@ -63,5 +77,18 @@ struct HtmlBuilder {
 		return *this;
 	}
 
+	// 调用所需创建对象的对应函数
 	[[nodiscard]] string str() const { return root.str(); }
 };
+
+void test_html_builder() {
+	HtmlBuilder builder("ul");
+	builder.add_child("li", "hello").add_child("li", "world");
+
+	std::cout << builder.str() << std::endl;
+}
+
+// int main() {
+// 	test_html_builder();
+// 	return 0;
+// }

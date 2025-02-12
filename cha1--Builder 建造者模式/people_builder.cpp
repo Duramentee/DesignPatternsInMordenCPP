@@ -4,6 +4,7 @@
 
 #include <string>
 #include <utility>
+#include <iostream>
 
 using namespace std;
 
@@ -37,6 +38,14 @@ class Person {
 public:
 	// 此处直接定义会因为PersonBuilder在之后定义而导致类型不完全, 所以放到了后面
 	static PersonBuilder create();
+
+	// Getter methods
+	[[nodiscard]] string get_street_address() const { return street_address; }
+	[[nodiscard]] string get_post_code() const { return post_code; }
+	[[nodiscard]] string get_city() const { return city; }
+	[[nodiscard]] string get_company_name() const { return company_name; }
+	[[nodiscard]] string get_position() const { return position; }
+	[[nodiscard]] int get_annual_income() const { return annual_income; }
 };
 
 class PersonBuilderBase {
@@ -126,7 +135,8 @@ PersonBuilder Person::create() {
 	return PersonJobBuilder{person};
 }
 
-void test_code() {
+void test_person_builder() {
+	// 创建一个 Person 对象
 	Person p = Person::create()
 				.lives()
 					.at("123 London Road")
@@ -137,4 +147,18 @@ void test_code() {
 					.as_a("Consultant")
 					.earning(10e6)
 				.build_object();
+
+	// 输出 Person 对象的详细信息以验证
+	std::cout << "Person Details:" << std::endl;
+	std::cout << "Street Address: " << p.get_street_address() << std::endl;
+	std::cout << "Post Code: " << p.get_post_code() << std::endl;
+	std::cout << "City: " << p.get_city() << std::endl;
+	std::cout << "Company Name: " << p.get_company_name() << std::endl;
+	std::cout << "Position: " << p.get_position() << std::endl;
+	std::cout << "Annual Income: " << p.get_annual_income() << std::endl;
+}
+
+int main() {
+	test_person_builder();
+	return 0;
 }

@@ -151,7 +151,8 @@ CMakeFiles/Builder.dir/html_builder.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/memory \
+ /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/sstream \
+ /usr/include/c++/14/bits/sstream.tcc /usr/include/c++/14/memory \
  /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
