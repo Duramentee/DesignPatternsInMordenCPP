@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Factories.dir/main.cpp.o CMakeFiles/Factories.dir/error_demonstration.cpp.o -o Factories
