@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Adapter",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Adapter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Adapter-Debug-6b332c1ab73c27469ce2.json",
+					"name" : "Adapter",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha5--Adapter \u9002\u914d\u5668/cmake-build-debug",
+		"source" : "/home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha5--Adapter \u9002\u914d\u5668"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

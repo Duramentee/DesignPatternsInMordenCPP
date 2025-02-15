@@ -3,4 +3,5 @@ project(Adapter)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Adapter main.cpp)
+add_executable(Adapter main.cpp
+        main.cpp)

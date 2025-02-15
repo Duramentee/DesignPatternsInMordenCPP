@@ -1,0 +1,16 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "Unix Makefiles" -S "/home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha5--Adapter 适配器" -B "/home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha5--Adapter 适配器/cmake-build-debug"
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (2.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha5--Adapter 适配器/cmake-build-debug
