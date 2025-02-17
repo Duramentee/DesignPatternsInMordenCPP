@@ -3,4 +3,7 @@ project(Bridge)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Bridge main.cpp)
+add_executable(Bridge main.cpp
+        main.cpp
+        Person.cpp
+        Person.h)
