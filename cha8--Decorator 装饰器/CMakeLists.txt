@@ -3,4 +3,5 @@ project(Decorator)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Decorator main.cpp)
+add_executable(Decorator main.cpp
+        cmake-build-debug/main.cpp)
