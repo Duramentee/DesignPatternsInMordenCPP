@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/usr/bin/make -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -G "Unix Makefiles" -S "/home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha12--Chain of Responsibility 责任链" -B "/home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha12--Chain of Responsibility 责任链/cmake-build-debug"
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/drowlia/code_save/DesignPattern/DesignPatternsInMordenCPP/cha12--Chain of Responsibility 责任链/cmake-build-debug

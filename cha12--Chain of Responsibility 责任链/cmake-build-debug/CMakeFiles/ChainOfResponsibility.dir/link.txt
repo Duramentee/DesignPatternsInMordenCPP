@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/ChainOfResponsibility.dir/main.cpp.o -o ChainOfResponsibility
