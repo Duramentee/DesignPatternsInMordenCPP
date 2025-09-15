@@ -137,6 +137,7 @@ PersonBuilder Person::create() {
 
 void test_person_builder() {
 	// 创建一个 Person 对象
+	// clang-format off
 	Person p = Person::create()
 				.lives()
 					.at("123 London Road")
@@ -147,6 +148,7 @@ void test_person_builder() {
 					.as_a("Consultant")
 					.earning(10e6)
 				.build_object();
+	// clang-format on
 
 	// 输出 Person 对象的详细信息以验证
 	std::cout << "Person Details:" << std::endl;
